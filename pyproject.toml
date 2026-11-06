@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shel-evidence-organizer"
+version = "0.1.0"
+description = "A local-first organizer for authorized security assessment evidence"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shadow Hunter Labs" }]
+dependencies = []
+
+[project.scripts]
+shel-evidence = "shel_evidence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
